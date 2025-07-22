@@ -38,9 +38,10 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   📞 Phone
                 </h3>
-                <p className="text-muted-foreground">
-                  +91 88283 26776
-                </p>
+                <div className="space-y-1">
+                  <p className="text-muted-foreground">+91 88283 26776</p>
+                  <p className="text-muted-foreground">+91 93262 88638</p>
+                </div>
               </div>
             </div>
             
@@ -61,7 +62,7 @@ const Contact = () => {
           
           <div className="bg-card rounded-lg shadow-soft overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8479563384373!2d72.86736007518945!3d19.11729988207582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85a7d3f1b7b%3A0x7c0b0b0b0b0b0b0b!2sSahar%20Plaza%2C%20Sir%20M.V.%20Rd%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400059!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0846688834073!2d72.8673597749139!3d19.114258982125676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85c14406565%3A0x93e2ea4ecad7c8a7!2sMeadows%20Tower%2C%20Sahar%20Plaza%2C%20Sir%20M.V.%20Rd%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400059!5e0!3m2!1sen!2sin!4v1674567890123!5m2!1sen!2sin"
               width="100%"
               height="300"
               style={{ border: 0 }}

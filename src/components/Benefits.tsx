@@ -3,7 +3,7 @@ import { Percent, Users, Zap, Shield } from "lucide-react";
 const benefits = [
   {
     icon: Percent,
-    title: "Save 20–40%",
+    title: "Save 40–50%",
     description: "Get exclusive discounts on top brand vouchers and gift cards",
   },
   {
