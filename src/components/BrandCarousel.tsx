@@ -17,16 +17,6 @@ const brandLogos = [
 ];
 
 const BrandCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % brandLogos.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="py-12 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
@@ -40,11 +30,8 @@ const BrandCarousel = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div 
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${(currentIndex * 100) / 6}%)` }}
-          >
-            {[...brandLogos, ...brandLogos].map((brand, index) => (
+          <div className="flex animate-[scroll_30s_linear_infinite] hover:[animation-play-state:paused]">
+            {[...brandLogos, ...brandLogos, ...brandLogos].map((brand, index) => (
               <div 
                 key={index}
                 className="flex-shrink-0 w-32 mx-4 p-4 bg-card rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 group"
