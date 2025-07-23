@@ -17,7 +17,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/9040e52d-de76-4a94-9cf1-147a9404e0c9.png" 
               alt="BrandWorld Logo" 
-              className="h-8 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Making gifting smarter with exclusive brand vouchers and digital gift cards at discounted rates.

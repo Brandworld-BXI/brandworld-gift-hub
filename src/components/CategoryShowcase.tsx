@@ -46,37 +46,34 @@ const CategoryShowcase = () => {
   };
 
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Explore Our Categories
+    <section className="py-12 px-4 bg-muted/50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+            Shop by Category
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Discover amazing deals across multiple categories
+          <p className="text-base text-muted-foreground">
+            Discover gift vouchers across diverse categories
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
           {categories.map((category, index) => (
             <div 
-              key={index}
-              className="group bg-card rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 transform hover:scale-105"
+              key={index} 
+              className="group relative overflow-hidden rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 bg-card aspect-square"
             >
-              <div className="aspect-square overflow-hidden">
+              <div className="h-2/3 overflow-hidden">
                 <img 
                   src={category.image} 
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
+              <div className="p-3 h-1/3 flex items-center justify-center">
+                <h3 className="text-sm font-semibold text-foreground text-center">
                   {category.title}
                 </h3>
-                <p className="text-muted-foreground">
-                  {category.description}
-                </p>
               </div>
             </div>
           ))}

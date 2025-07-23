@@ -1,13 +1,16 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import BrandCarousel from "@/components/BrandCarousel";
 import CategoryShowcase from "@/components/CategoryShowcase";
 import HowItWorks from "@/components/HowItWorks";
 import Benefits from "@/components/Benefits";
+import SocialProof from "@/components/SocialProof";
 import CallToAction from "@/components/CallToAction";
 import InstagramSection from "@/components/InstagramSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MobileCTA from "@/components/MobileCTA";
 
 const Index = () => {
   return (
@@ -16,14 +19,17 @@ const Index = () => {
       <main className="pt-16">
         <Hero />
         <About />
+        <BrandCarousel />
         <CategoryShowcase />
         <HowItWorks />
         <Benefits />
+        <SocialProof />
         <CallToAction />
         <InstagramSection />
         <Contact />
       </main>
       <Footer />
+      <MobileCTA />
     </div>
   );
 };

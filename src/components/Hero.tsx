@@ -18,14 +18,14 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-          <span className="block text-accent">BrandWorld</span>
+          <span className="block text-accent text-5xl md:text-7xl">BrandWorld</span>
           <span className="block text-2xl md:text-4xl font-normal mt-2">
-            Smart Gifting at Discounted Prices
+            Buy Gift Vouchers & Curated Products at Special Prices
           </span>
         </h1>
         
-        <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-xl mx-auto">
-          Premium vouchers, instant delivery
+        <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+          Available for individual and corporate gifting — explore & purchase instantly.
         </p>
         
         <Button 
