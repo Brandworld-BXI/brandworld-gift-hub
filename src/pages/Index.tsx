@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import DynamicHero from "@/components/DynamicHero";
 import About from "@/components/About";
 import BrandCarousel from "@/components/BrandCarousel";
 import CategoryShowcase from "@/components/CategoryShowcase";
@@ -17,7 +17,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-16">
-        <Hero />
+        <DynamicHero />
         <About />
         <BrandCarousel />
         <CategoryShowcase />

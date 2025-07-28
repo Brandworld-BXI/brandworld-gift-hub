@@ -93,7 +93,7 @@ const Contact = () => {
           </div>
           
           <div className="bg-card p-6 rounded-lg shadow-soft">
-            <h3 className="text-xl font-semibold text-foreground mb-6">Send us an enquiry</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-6">Contact Support</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>

@@ -14,7 +14,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/9040e52d-de76-4a94-9cf1-147a9404e0c9.png" 
               alt="BrandWorld Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           <div className="hidden md:block">
