@@ -18,37 +18,37 @@ const DynamicHero = () => {
       image: giftingImage,
       title: "Premium Gift Vouchers",
       subtitle: "Perfect for every occasion",
-      color: "from-purple-600/80 to-pink-600/80"
+      color: "from-purple-500/90 to-pink-600/90"
     },
     {
       image: electronicsImage,
       title: "Electronics & Gadgets",
       subtitle: "Latest tech at amazing prices",
-      color: "from-blue-600/80 to-cyan-600/80"
+      color: "from-blue-500/90 to-cyan-600/90"
     },
     {
       image: diningImage,
       title: "Dining & Food",
       subtitle: "Delicious experiences await",
-      color: "from-orange-600/80 to-red-600/80"
+      color: "from-orange-500/90 to-red-600/90"
     },
     {
       image: entertainmentImage,
       title: "Entertainment",
       subtitle: "Movies, games & more",
-      color: "from-purple-600/80 to-indigo-600/80"
+      color: "from-purple-500/90 to-indigo-600/90"
     },
     {
       image: lifestyleImage,
       title: "Lifestyle & Fashion",
       subtitle: "Style that speaks to you",
-      color: "from-pink-600/80 to-rose-600/80"
+      color: "from-pink-500/90 to-rose-600/90"
     },
     {
       image: travelImage,
       title: "Travel & Adventures",
       subtitle: "Explore the world",
-      color: "from-green-600/80 to-teal-600/80"
+      color: "from-green-500/90 to-teal-600/90"
     }
   ];
 
@@ -75,26 +75,27 @@ const DynamicHero = () => {
           }`}
         >
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-[scale-zoom_4s_ease-in-out_infinite]"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-[ken-burns_8s_ease-in-out_infinite]"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
-          <div className={`absolute inset-0 bg-gradient-to-r ${slide.color}`} />
+          <div className={`absolute inset-0 bg-gradient-to-br ${slide.color}`} />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
       ))}
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            <span className="block text-accent text-5xl md:text-7xl drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <span className="block text-white text-5xl md:text-7xl drop-shadow-2xl font-extrabold">
               BrandWorld
             </span>
-            <span className="block text-2xl md:text-4xl font-normal mt-2 drop-shadow-md">
+            <span className="block text-2xl md:text-4xl font-normal mt-2 drop-shadow-xl text-white/95">
               Buy Gift Vouchers & Curated Products at Special Prices
             </span>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto drop-shadow-sm">
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-lg font-medium">
             Available for individual and corporate gifting — explore & purchase instantly.
           </p>
           
@@ -102,7 +103,7 @@ const DynamicHero = () => {
             onClick={redirectToExplore}
             variant="hero" 
             size="lg"
-            className="text-lg px-8 py-4 h-auto animate-pulse hover:animate-none transition-all duration-300 hover:scale-105"
+            className="text-lg px-8 py-4 h-auto transition-all duration-300 hover:scale-105 shadow-2xl"
           >
             Explore to Buy
             <ArrowRight className="ml-2 h-5 w-5" />
