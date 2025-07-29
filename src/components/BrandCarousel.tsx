@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 
-// Mock brand logos - in production, these would be actual brand logos
+// Brand logos with actual uploaded images
 const brandLogos = [
-  { name: "Amazon", logo: "🛒" },
-  { name: "Big Bazaar", logo: "🏪" },
-  { name: "Starbucks", logo: "☕" },
-  { name: "Cinepolis", logo: "🎬" },
-  { name: "Treebo", logo: "🏨" },
-  { name: "Blowhot", logo: "🔥" },
-  { name: "Wallop", logo: "⚡" },
-  { name: "Cheesiano", logo: "🧀" },
-  { name: "Myntra", logo: "👕" },
-  { name: "Flipkart", logo: "📱" },
-  { name: "Zomato", logo: "🍔" },
-  { name: "BookMyShow", logo: "🎭" }
+  { name: "Barbeque Nation", logo: "/lovable-uploads/e0c04fa4-51aa-46d3-afe1-bb69f2a86c33.png" },
+  { name: "Wonderla", logo: "/lovable-uploads/4640c789-8104-4448-a5ac-f1b069b5103b.png" },
+  { name: "Salt Indian Restaurant", logo: "/lovable-uploads/e1116578-348d-4add-b458-ad7f81ba67dd.png" },
+  { name: "Finch", logo: "/lovable-uploads/24141a23-0524-443e-801d-e417abf15a34.png" },
+  { name: "Chili's", logo: "/lovable-uploads/4f5ff060-e4b3-44f9-9c99-6452b072a1a2.png" },
+  { name: "Cheesiano Pizza", logo: "/lovable-uploads/dd0da23e-ca1d-4606-9cf6-f4707fca102c.png" },
+  { name: "Harley's", logo: "/lovable-uploads/9a32946c-82c2-4e28-8d1b-9f4ddc5dd766.png" },
+  { name: "Wow! Momo", logo: "/lovable-uploads/27184438-0e88-4131-a176-71b5096aa359.png" },
+  { name: "Baskin Robbins", logo: "/lovable-uploads/01bc961b-a073-410f-bd9e-6de14e347f23.png" },
+  { name: "Smaaash", logo: "/lovable-uploads/5f294c40-1db4-46b9-8d2c-71a34fee1859.png" }
 ];
 
 const BrandCarousel = () => {
@@ -37,8 +35,12 @@ const BrandCarousel = () => {
                 className="flex-shrink-0 w-32 mx-4 p-4 bg-card rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 group"
               >
                 <div className="text-center">
-                  <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {brand.logo}
+                  <div className="w-16 h-16 mx-auto mb-2 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 group-hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src={brand.logo} 
+                      alt={brand.name}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div className="text-sm font-medium text-foreground">
                     {brand.name}

@@ -16,39 +16,38 @@ const DynamicHero = () => {
   const slides = [
     {
       image: heroGiftingImage,
-      title: "Premium Gift Vouchers",
-      subtitle: "Perfect for every special moment and celebration",
-      color: "from-purple-600/85 to-pink-600/85"
-    },
-    {
-      image: heroElectronicsImage,
-      title: "Electronics & Gadgets",
-      subtitle: "Cutting-edge technology at unbeatable prices",
-      color: "from-blue-600/85 to-cyan-500/85"
-    },
-    {
-      image: heroDiningImage,
-      title: "Dining & Culinary",
-      subtitle: "Exquisite flavors and memorable dining experiences",
-      color: "from-orange-600/85 to-amber-500/85"
-    },
-    {
-      image: heroEntertainmentImage,
-      title: "Entertainment Hub",
-      subtitle: "Movies, games, music and endless fun",
-      color: "from-purple-600/85 to-violet-500/85"
-    },
-    {
-      image: heroLifestyleImage,
-      title: "Lifestyle & Fashion",
-      subtitle: "Elegance and style that defines you",
-      color: "from-pink-600/85 to-rose-500/85"
+      title: "Celebrate Moments",
+      subtitle: "Gift with Brandworld",
+      description: "Perfect for every special moment and celebration",
+      color: "from-purple-600/90 to-pink-600/90"
     },
     {
       image: heroTravelImage,
-      title: "Travel & Adventures",
-      subtitle: "Discover amazing destinations and create memories",
-      color: "from-emerald-600/85 to-teal-500/85"
+      title: "Escape in Style",
+      subtitle: "Premium Hotel Vouchers",
+      description: "Hotel & staycation experiences for memorable getaways",
+      color: "from-emerald-600/90 to-teal-500/90"
+    },
+    {
+      image: heroElectronicsImage,
+      title: "Tech That Delights",
+      subtitle: "Top Electronic Picks",
+      description: "Cutting-edge gadgets and electronics at special prices",
+      color: "from-blue-600/90 to-cyan-500/90"
+    },
+    {
+      image: heroDiningImage,
+      title: "Treat Their Taste Buds",
+      subtitle: "Dining Vouchers & More",
+      description: "Exquisite flavors and memorable dining experiences",
+      color: "from-orange-600/90 to-amber-500/90"
+    },
+    {
+      image: heroLifestyleImage,
+      title: "Style That Speaks",
+      subtitle: "Fashion-Focused Vouchers",
+      description: "Elegance and style that defines your personality",
+      color: "from-pink-600/90 to-rose-500/90"
     }
   ];
 
@@ -59,7 +58,7 @@ const DynamicHero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -85,30 +84,40 @@ const DynamicHero = () => {
       ))}
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in">
-          <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              <span className="block text-white text-5xl md:text-7xl drop-shadow-2xl font-black tracking-wide">
-                BrandWorld
-              </span>
-              <span className="block text-xl md:text-3xl font-medium mt-4 drop-shadow-xl text-white/95 leading-relaxed">
-                Buy Gift Vouchers & Curated Products at Special Prices
-              </span>
+          {/* Main Brand Title */}
+          <div className="mb-8">
+            <h1 className="text-white text-6xl md:text-8xl drop-shadow-2xl font-black tracking-wide mb-4 animate-[slideInDown_1s_ease-out]">
+              BrandWorld
             </h1>
-            
-            <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl mx-auto drop-shadow-lg font-medium leading-relaxed">
-              Available for individual and corporate gifting — explore & purchase instantly.
+            <p className="text-white/90 text-xl md:text-2xl font-medium drop-shadow-xl animate-[slideInUp_1s_ease-out_0.2s_both]">
+              Buy Gift Vouchers & Curated Products at Special Prices
             </p>
+          </div>
+
+          {/* Dynamic Content Card */}
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/30 shadow-2xl animate-[zoomIn_1s_ease-out_0.4s_both]">
+            <div className="mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 animate-[fadeInLeft_0.8s_ease-out]">
+                {slides[currentSlide].title}
+              </h2>
+              <h3 className="text-xl md:text-2xl font-semibold text-white/95 mb-3 animate-[fadeInRight_0.8s_ease-out_0.1s_both]">
+                {slides[currentSlide].subtitle}
+              </h3>
+              <p className="text-lg text-white/85 animate-[fadeInUp_0.8s_ease-out_0.2s_both]">
+                {slides[currentSlide].description}
+              </p>
+            </div>
             
             <Button 
               onClick={redirectToExplore}
               variant="hero" 
               size="lg"
-              className="text-lg px-10 py-5 h-auto transition-all duration-300 hover:scale-105 shadow-2xl border-2 border-white/30 hover:border-white/50"
+              className="text-lg px-12 py-6 h-auto transition-all duration-500 hover:scale-110 shadow-2xl border-2 border-white/40 hover:border-white/70 animate-[bounceIn_1s_ease-out_0.6s_both]"
             >
               Explore to Buy
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
           </div>
         </div>
@@ -128,12 +137,13 @@ const DynamicHero = () => {
           ))}
         </div>
 
-        {/* Floating Category Label */}
-        <div className="absolute top-1/4 right-8 hidden lg:block">
-          <div className="bg-black/60 backdrop-blur-md rounded-xl p-6 text-white border border-white/20 shadow-2xl">
-            <div className="text-sm opacity-90 font-medium">Now Showing</div>
-            <div className="font-bold text-lg mt-1">{slides[currentSlide].title}</div>
-            <div className="text-sm opacity-80 mt-1 leading-relaxed">{slides[currentSlide].subtitle}</div>
+        {/* Progress Bar */}
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-64">
+          <div className="bg-white/20 rounded-full h-1 overflow-hidden">
+            <div 
+              className="bg-white h-full transition-all duration-300 ease-linear"
+              style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
+            />
           </div>
         </div>
       </div>
