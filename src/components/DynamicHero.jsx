@@ -2,52 +2,42 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-// Import hero images
-import heroGiftingImage from "@/assets/hero-gifting.jpg";
-import heroElectronicsImage from "@/assets/hero-electronics.jpg";
-import heroDiningImage from "@/assets/hero-dining.jpg";
-import heroEntertainmentImage from "@/assets/hero-entertainment.jpg";
-import heroLifestyleImage from "@/assets/hero-lifestyle.jpg";
-import heroTravelImage from "@/assets/hero-travel.jpg";
+// Import hero video frame
+import heroVideoFrame from "@/assets/hero-video-frame.jpg";
 
 const DynamicHero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image: heroGiftingImage,
       title: "Celebrate Moments",
       subtitle: "Gift with Brandworld",
       description: "Perfect for every special moment and celebration",
-      color: "from-purple-600/90 to-pink-600/90"
+      color: "from-purple-600/80 to-pink-600/80"
     },
     {
-      image: heroTravelImage,
       title: "Escape in Style",
       subtitle: "Premium Hotel Vouchers",
       description: "Hotel & staycation experiences for memorable getaways",
-      color: "from-emerald-600/90 to-teal-500/90"
+      color: "from-emerald-600/80 to-teal-500/80"
     },
     {
-      image: heroElectronicsImage,
       title: "Tech That Delights",
       subtitle: "Top Electronic Picks",
       description: "Cutting-edge gadgets and electronics at special prices",
-      color: "from-blue-600/90 to-cyan-500/90"
+      color: "from-blue-600/80 to-cyan-500/80"
     },
     {
-      image: heroDiningImage,
       title: "Treat Their Taste Buds",
       subtitle: "Dining Vouchers & More",
       description: "Exquisite flavors and memorable dining experiences",
-      color: "from-orange-600/90 to-amber-500/90"
+      color: "from-orange-600/80 to-amber-500/80"
     },
     {
-      image: heroLifestyleImage,
       title: "Style That Speaks",
       subtitle: "Fashion-Focused Vouchers",
       description: "Elegance and style that defines your personality",
-      color: "from-pink-600/90 to-rose-500/90"
+      color: "from-pink-600/80 to-rose-500/80"
     }
   ];
 
@@ -65,23 +55,19 @@ const DynamicHero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-[ken-burns_8s_ease-in-out_infinite]"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
-          <div className={`absolute inset-0 bg-gradient-to-br ${slide.color}`} />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
-          <div className="absolute inset-0 bg-black/10" />
-        </div>
-      ))}
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-[ken-burns_12s_ease-in-out_infinite]"
+          style={{ backgroundImage: `url(${heroVideoFrame})` }}
+        />
+        {/* Dynamic Color Overlay */}
+        <div 
+          className={`absolute inset-0 bg-gradient-to-br transition-all duration-1000 ${slides[currentSlide].color}`} 
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50" />
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
