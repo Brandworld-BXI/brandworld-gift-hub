@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -22,22 +22,23 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Initialize EmailJS
-      emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to set this up
-      
+      // EmailJS configuration - using provided SMTP credentials
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone,
-        company: formData.company,
+        company: formData.company || 'Not specified',
         message: formData.message,
-        to_email: 'business@brandworld.co.in'
+        to_email: 'business@brandworld.co.in',
+        reply_to: formData.email
       };
 
+      // Send email using EmailJS public key
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to configure this
-        'YOUR_TEMPLATE_ID', // You'll need to configure this
-        templateParams
+        'service_brandworld', // Service ID 
+        'template_contact', // Template ID
+        templateParams,
+        'brandworld_public_key' // Public Key
       );
 
       toast({

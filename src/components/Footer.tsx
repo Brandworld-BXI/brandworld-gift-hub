@@ -1,4 +1,6 @@
 import { Instagram, Facebook } from "lucide-react";
+import TermsModal from "./TermsModal";
+import PrivacyModal from "./PrivacyModal";
 
 const Footer = () => {
   const openInstagram = () => {
@@ -27,8 +29,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/terms" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Terms & Conditions</a></li>
-              <li><a href="/privacy" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Privacy Policy</a></li>
+              <li>
+                <TermsModal>
+                  <button className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Terms & Conditions
+                  </button>
+                </TermsModal>
+              </li>
+              <li>
+                <PrivacyModal>
+                  <button className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Privacy Policy
+                  </button>
+                </PrivacyModal>
+              </li>
               <li><a href="mailto:business@brandworld.co.in" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Support</a></li>
             </ul>
           </div>
