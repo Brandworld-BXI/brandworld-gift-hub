@@ -42,7 +42,7 @@ const categories = [
 
 const CategoryShowcase = () => {
   const redirectToExplore = () => {
-    window.open("https://brandworld-voucher.netlify.app", "_blank");
+    window.open("https://voucher.brandworld.co.in/login", "_blank");
   };
 
   return (
