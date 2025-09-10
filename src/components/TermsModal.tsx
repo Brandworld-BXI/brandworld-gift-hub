@@ -247,7 +247,7 @@ const TermsModal = ({ children }: TermsModalProps) => {
               <p className="mt-3">For any disputes:</p>
               <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
                 <li>Email: business@brandworld.co.in</li>
-                <li>Contact: +91 88283 26776/+91 93262 88638</li>
+                <li>Contact: +91 98677 38393/+91 93262 88638</li>
               </ul>
             </section>
 

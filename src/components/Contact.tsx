@@ -107,7 +107,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Phone</h3>
                 <p className="text-muted-foreground text-sm">
-                  +91 88283 26776<br />
+                  +91 98677 38393<br />
                   +91 93262 88638
                 </p>
               </div>
