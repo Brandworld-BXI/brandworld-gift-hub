@@ -22,7 +22,7 @@ const MobileCTA = () => {
   }, [isHidden]);
 
   const redirectToExplore = () => {
-    window.open("https://brandworld-voucher.netlify.app", "_blank");
+    window.open("https://voucher.brandworld.co.in/", "_blank");
   };
 
   const hideCTA = () => {
