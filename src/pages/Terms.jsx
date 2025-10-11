@@ -75,7 +75,7 @@ const Terms = () => {
                 <br />
                 Email: business@brandworld.co.in
                 <br />
-                Phone: +91 88283 26776
+                Phone: +91 98677 38393
               </p>
             </section>
 
