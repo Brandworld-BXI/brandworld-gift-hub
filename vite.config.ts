@@ -19,4 +19,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  preview: {
+    // allow the brandworld.co.in host for Vite preview (useful for cPanel or previewing on that host)
+    allowedHosts: ["brandworld.co.in"],
+  },
 }));
