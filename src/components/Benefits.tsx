@@ -1,8 +1,8 @@
-import { Percent, Users, Zap, Shield } from "lucide-react";
+import { Globe, Users, Zap, Shield } from "lucide-react";
 
 const benefits = [
   {
-    icon: Percent,
+    icon: Globe,
     title: "Multi - brand universe",
     description: "Access a wide network of brands, products, and services through a single trading partner",
   },
@@ -25,7 +25,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-16 px-4">
+  <section className="scroll-mt-20 md:scroll-mt-24 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">

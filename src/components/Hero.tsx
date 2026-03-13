@@ -1,12 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-vouchers.jpg";
 
 const Hero = () => {
-  const redirectToExplore = () => {
-    window.open("https://voucher.brandworld.co.in/", "_blank");
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
@@ -15,29 +9,8 @@ const Hero = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/60"></div>
       </div>
-      
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-          <span className="block text-accent text-5xl md:text-7xl">BrandWorld</span>
-          <span className="block text-2xl md:text-4xl font-normal mt-2">
-            Buy Gift Vouchers & Curated Products at Special Prices
-          </span>
-        </h1>
-        
-        <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-          Available for individual and corporate gifting — explore & purchase instantly.
-        </p>
-        
-        <Button 
-          onClick={redirectToExplore}
-          variant="hero" 
-          size="lg"
-          className="text-lg px-8 py-4 h-auto"
-        >
-          Explore to Buy
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
-      </div>
+
+      {/* Overlay content removed per request - hero displays only the background image */}
     </section>
   );
 };

@@ -16,7 +16,7 @@ const brandLogos = [
 
 const BrandCarousel = () => {
   return (
-    <section className="py-16 px-4 bg-muted/20">
+  <section className="scroll-mt-20 md:scroll-mt-24 py-16 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">

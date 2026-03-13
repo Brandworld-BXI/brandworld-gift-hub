@@ -36,7 +36,7 @@ const InstagramSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-muted/30">
+  <section className="scroll-mt-20 md:scroll-mt-24 py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">

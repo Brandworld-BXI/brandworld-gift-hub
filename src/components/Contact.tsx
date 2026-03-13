@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-muted/10">
+  <section className="scroll-mt-20 md:scroll-mt-24 py-16 px-4 bg-muted/10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -130,7 +130,7 @@ const Contact = () => {
           <div className="lg:col-span-1">
             <div className="h-80 bg-muted rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9286144305465!2d72.86831977418507!3d19.11078735088148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c98095b3f2bb%3A0x7d27caf5500e29f!2sBXI-Barter%20Exchange%20Of%20India!5e0!3m2!1sen!2sin!4v1773317390321!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9257680665205!2d72.87079839999998!3d19.11091220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83ee74e1cd3%3A0xaedab5564f5cb674!2sVKG%20Corporate%20Centre!5e0!3m2!1sen!2sin!4v1773384625271!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -50,7 +50,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12 px-4">
+  <footer className="bg-primary text-primary-foreground py-6 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div>
@@ -92,11 +92,12 @@ const Footer = () => {
               </li>
               <li><a href="mailto:business@brandworld.co.in" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Support</a></li>
             </ul>
+            <br></br>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-            <div className="flex space-x-4 mb-4">
+            <div className="flex space-x-4 mb-2">
               <button
                 onClick={openInstagram}
                 className="bg-primary-foreground/10 p-2 rounded-full hover:bg-primary-foreground/20 transition-colors"
@@ -111,13 +112,13 @@ const Footer = () => {
               </button>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              business@brandworld.co.in<br />
-              +91 98677 38393
+              GST : 27ABBFB2363D1ZW<br />
+              PAN : ABBFB2363D
             </p>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 text-center">
+  <div className="border-t border-primary-foreground/20 pt-2 text-center">
           <p className="text-primary-foreground/60 text-sm">
             © {Year} BrandWorld. All rights reserved
           </p>

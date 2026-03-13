@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="py-16 px-4 bg-muted/30">
+  <section id="about" className="scroll-mt-20 md:scroll-mt-24 py-16 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           About BrandWorld

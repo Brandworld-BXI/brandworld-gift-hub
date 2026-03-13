@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Gift } from "lucide-react";
+import { Search, ShoppingCart, Gift, Headphones } from "lucide-react";
 
 const steps = [
   {
@@ -23,7 +23,7 @@ const steps = [
     ),
   },
   {
-    icon: Gift,
+    icon: Headphones,
     title: "Support",
     description: "Smooth delivery & assistance",
   },
@@ -31,7 +31,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-16 px-4 bg-muted/30">
+  <section id="how-it-works" className="scroll-mt-20 md:scroll-mt-24 py-16 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">

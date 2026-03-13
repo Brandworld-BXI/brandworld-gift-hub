@@ -6,6 +6,7 @@ import electronicsImage from "@/assets/electronics-category.jpg";
 import diningImage from "@/assets/dining-category.jpg";
 import entertainmentImage from "@/assets/entertainment-category.jpg";
 import travelImage from "@/assets/travel-category.jpg";
+// media image will be served from the built assets folder
 
 const categories = [
   {
@@ -38,6 +39,11 @@ const categories = [
     description: "Hotels, flights, and vacation packages",
     image: travelImage,
   },
+  {
+    title: "📺 Media",
+    description: "Media, advertising and campaign solutions",
+    image: "/media.jpg",
+  },
 ];
 
 const CategoryShowcase = () => {
@@ -46,7 +52,7 @@ const CategoryShowcase = () => {
   };
 
   return (
-    <section className="py-12 px-4 bg-muted/50">
+  <section className="scroll-mt-20 md:scroll-mt-24 py-12 px-4 bg-muted/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -57,7 +63,7 @@ const CategoryShowcase = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-8">
           {categories.map((category, index) => (
             <div 
               key={index} 
