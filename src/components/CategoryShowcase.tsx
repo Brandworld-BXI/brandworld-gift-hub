@@ -42,18 +42,18 @@ const categories = [
 
 const CategoryShowcase = () => {
   const redirectToExplore = () => {
-    window.open("https://brandworld-voucher.netlify.app", "_blank");
+    window.open("https://voucher.brandworld.co.in/", "_blank");
   };
 
   return (
     <section className="py-12 px-4 bg-muted/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-            Shop by Category
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Categories
           </h2>
-          <p className="text-base text-muted-foreground">
-            Discover gift vouchers across diverse categories
+            <p className="text-base text-muted-foreground mb-6">
+            Discover product and services across diverse categories
           </p>
         </div>
         
@@ -77,18 +77,6 @@ const CategoryShowcase = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center">
-          <Button 
-            onClick={redirectToExplore}
-            variant="brand" 
-            size="lg"
-            className="text-lg px-8 py-4 h-auto"
-          >
-            Explore to Buy
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
         </div>
       </div>
     </section>

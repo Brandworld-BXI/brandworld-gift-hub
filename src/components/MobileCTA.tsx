@@ -22,7 +22,7 @@ const MobileCTA = () => {
   }, [isHidden]);
 
   const redirectToExplore = () => {
-    window.open("https://brandworld-voucher.netlify.app", "_blank");
+    window.open("https://voucher.brandworld.co.in/", "_blank");
   };
 
   const hideCTA = () => {
@@ -34,7 +34,7 @@ const MobileCTA = () => {
 
   return (
     <div className="md:hidden fixed bottom-4 left-4 right-4 z-50 animate-fade-in">
-      <div className="bg-brand text-primary-foreground p-4 rounded-lg shadow-lg flex items-center justify-between">
+      <div className="bg-brand text-primary-foreground p-4 rounded-lg shadow-lg flex items-center justify-between" style={{backgroundColor : '#ff686b'}}>
         <div className="flex-1">
           <div className="font-semibold text-sm">Ready to save on vouchers?</div>
           <div className="text-xs opacity-90">Up to 40% off • Instant delivery</div>

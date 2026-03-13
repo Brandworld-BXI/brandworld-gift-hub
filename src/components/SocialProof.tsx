@@ -3,7 +3,7 @@ import { Star, Users, Shield, Zap } from "lucide-react";
 const testimonials = [
   {
     name: "Priya Sharma",
-    role: "HR Manager, Tech Corp",
+    role: "HR Manager",
     content: "BrandWorld made our employee rewards program seamless. Great discounts and instant delivery!",
     rating: 5
   },
@@ -33,7 +33,7 @@ const SocialProof = () => {
     <section className="py-16 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
             Why Brands & Professionals Trust BrandWorld
           </h2>
           <p className="text-muted-foreground">

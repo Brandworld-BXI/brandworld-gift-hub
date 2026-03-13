@@ -3,7 +3,7 @@ import { ArrowRight, Gift } from "lucide-react";
 
 const CallToAction = () => {
   const redirectToExplore = () => {
-    window.open("https://brandworld-voucher.netlify.app", "_blank");
+    window.open("https://voucher.brandworld.co.in/", "_blank");
   };
 
   return (
@@ -11,7 +11,7 @@ const CallToAction = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <Gift className="h-16 w-16 text-accent mx-auto mb-4" />
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4" style={{color:"red"}}>
             🎉 Ready to save on your next gift?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">

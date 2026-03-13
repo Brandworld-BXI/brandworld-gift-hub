@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 const Terms = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" style={{marginTop:"100px"}}>
       <Header />
       <main className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -75,7 +75,7 @@ const Terms = () => {
                 <br />
                 Email: business@brandworld.co.in
                 <br />
-                Phone: +91 88283 26776
+                Phone: +91 98677 38393
               </p>
             </section>
 

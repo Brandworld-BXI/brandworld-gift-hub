@@ -16,15 +16,12 @@ const brandLogos = [
 
 const BrandCarousel = () => {
   return (
-    <section className="py-12 px-4 bg-muted/20">
+    <section className="py-16 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-            Available Vouchers From Top Brands
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Active Brands
           </h2>
-          <p className="text-muted-foreground">
-            Up to 40% off on Gift Vouchers from 100+ trusted brands
-          </p>
         </div>
         
         <div className="relative overflow-hidden">

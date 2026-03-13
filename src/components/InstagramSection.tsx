@@ -39,8 +39,8 @@ const InstagramSection = () => {
     <section className="py-20 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Trusted by brands. Loved by gifters.
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Trusted by brands & Loved by customers
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
             Follow us on Instagram for the latest deals and promotions

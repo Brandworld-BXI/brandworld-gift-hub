@@ -104,7 +104,7 @@ const Privacy = () => {
                 <br />
                 Email: business@brandworld.co.in
                 <br />
-                Phone: +91 88283 26776
+                Phone: +91 98677 38393
                 <br />
                 Address: 501, Meadows Tower, Sahar Plaza, Sir M.V. Road, Andheri (E), Mumbai 400059
               </p>
