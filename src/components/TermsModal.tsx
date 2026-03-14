@@ -69,7 +69,7 @@ const TermsModal = () => {
         <section>
           <h3 className="text-lg font-semibold text-foreground mb-3">Voucher Policy</h3>
           <p>
-          BrandWorld distributes brand vouchers issued by third-party brands. Upon successful payment voucher codes may be delivered digitally.
+          BrandWorld distributes brand vouchers issued by third-party brands. Upon successful payment voucher codes may be delivered digitally or physically.
           </p>
           <p className="mt-3">
           Once voucher codes are issued, BrandWorld shall not be responsible for redemption restrictions, expiry, availability of products or services at the brand level. Redemption terms are governed by the respective brand issuing the voucher.
